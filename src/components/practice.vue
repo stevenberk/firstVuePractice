@@ -5,7 +5,7 @@
       <li v-for="(data, index) in skills" :key='index'>{{index}}. {{data.skill}}
       </li> 
     </ul>
-    <p v-if="skills.length >= 1"> You have more than one skill</p>
+    <p v-if="skills.length > 1"> You have more than one skill</p>
     <p v-else>You have less than or equal to one skill</p>
   </div>
  </div> 
@@ -18,7 +18,13 @@ export default {
    return{
      skills:[
        {"skill" : "vue.js"},
-       {"skill" : "front end developer"},
+       {"skill" : "Visual studio code"},
+       {"skill" : "HTML5"},
+       {"skill" : "Vanilla JS"},
+       {"skill" : "CSS"},
+       {"skill" : "Photoshop"},
+       {"skill" : "ms paint"},
+       {"skill" : "github"}
      ]
    }
  }
